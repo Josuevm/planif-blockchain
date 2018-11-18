@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="row">
+    <div *ngFor="let node of nodes; let i = index" class="col-md-4">
+      <div class="node" (click)="showNodeInfo(i)">
+        <h2>Node {{i}}</h2>
+      </div>
+    </div>
+  </div>
+</div>

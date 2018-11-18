@@ -1,0 +1,40 @@
+<div *ngIf="node">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="node-info-header">
+          <h2>Node {{nodeIndex}}</h2>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+
+      <div class="col-md-8">
+        <div *ngFor="let block of node.blockchain.blocks" class="row">
+          <div class="col-md-12">
+            <div class="block">
+              <h3>Block: {{block.index}}</h3>
+              <p>{{block.previousHash}}</p>
+              <p>{{block.hash}}</p>
+              <p>{{block.nonce}}</p>
+            </div>
+          </div>
+          <!-- Incluir transacciones -->
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="ticket">
+          <div class="ticket-form-header">
+            <h3>Create Ticket</h3>
+          </div>
+          <div class="ticket-form">
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>

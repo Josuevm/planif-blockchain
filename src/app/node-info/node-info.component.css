@@ -1,0 +1,17 @@
+.node-info-header{
+    text-align: center;
+}
+
+.block{
+    border: 1px solid gray;
+}
+
+.ticket {
+    border: 1px solid gray; 
+}
+
+.ticket-form-header{
+    text-align: center;
+    background-color: gray;
+    color: aliceblue;
+}
